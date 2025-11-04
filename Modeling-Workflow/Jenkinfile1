@@ -2,7 +2,8 @@ pipeline {
     
     agent any //Defines the worker node
     environment {
-        RELEASE='20.04' //Declaring an environment variable within a pipeline
+        RELEASE='20.04'
+        LOG_LEVEL='INFO' //Declaring an environment variable within a pipeline (global variable)
     }
 
     stages {
